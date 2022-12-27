@@ -1,0 +1,14 @@
+body{
+    background:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 44px;
+    text-align: center;
+    color:black;
+
+}
+.description{
+    transition:0.9s ease-in-out;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome class CDN for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- G fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator">
+       <div class="heading">
+        <h1 class="">Tip Calculator</h1>
+        <h5 class="">By Avi Codes</h5>
+       </div>
+
+        <label for="totalBill">Bill</label>
+        <input type="number" oninput="calculateTip()" onchange="calculateTip()" id="totalBill" placeholder="Enter your Bill Amount">
+        <label for="tipPercentage" style="display: flex;justify-content: space-between;">
+            <span>Tip %</span>
+            <span id="tipPercentageText">15%</span>
+        </label>
+        <input type="range" oninput="calculateTip()" min="5" max="60" onchange="calculateTip()" id="tipPercentage">
+        <label for="numOfPerson" style="display: flex;justify-content: space-between;">
+            <span>No. of Person</span>
+            <span id="numOfPersonText">15</span>
+        </label>
+        <input type="range" oninput="calculateTip()" min="2" max="20" onchange="calculateTip()" id="numOfPerson">
+        <div class="result" id="result">
+            <h5 style="margin: 8px 0px;display: flex;justify-content: space-between;">
+                <span>Tip</span>
+                <span style="font-size: 1.2rem;">__.__</span>
+            </h5>
+            <h5 style="margin: 8px 0px;display: flex;justify-content: space-between;">
+                <span>Total</span>
+                <span style="font-size: 1.2rem;">__.__</span>
+            </h5>
+            <h5 style="margin: 8px 0px;display: flex;justify-content: space-between;">
+                <span>Each Person Pay</span>
+                <span style="font-size: 1.2rem;">__.__</span>
+            </h5>
+
+        </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

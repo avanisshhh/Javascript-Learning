@@ -14,9 +14,6 @@ const avanish={
     }
 };
 
-
-
-
 const dj={
     firstName:"Sam",
     lastName:"Singh",

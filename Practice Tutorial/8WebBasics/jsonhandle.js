@@ -6,7 +6,7 @@ const student={
 //jsoneditoronline.org
 //https://randomuser.me/
 
-//Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+//Converts a JavaScript ob value to a JavaScript Object Notation (JSON) string.
 const stOb=JSON.stringify(student);
 console.log(typeof stOb);
 

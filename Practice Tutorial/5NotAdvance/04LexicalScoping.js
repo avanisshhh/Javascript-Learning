@@ -8,4 +8,4 @@ function init() {
 }
 
 init();
-console.log(firstName);
+console.log(this.firstName); //undefined

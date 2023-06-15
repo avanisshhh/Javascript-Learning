@@ -22,6 +22,6 @@ User.prototype.getFirstName=function(){      //prototype used for generating a f
 }
 
 //better code with js
-if(avanish.hasOwnProperty("firstName")){
+if(avanish.hasOwnProperty("firstName")){//check is the var is there or defined or nt
     avanish.getFirstName();
 }

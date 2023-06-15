@@ -1,10 +1,17 @@
 //51
 
 //var obj=new Object;
-var myMap=new Map();
+// map() creates a new array from calling a function for every array element.
+
+// map() does not execute the function for empty elements.
+
+// map() does not change the original array.
+var myMap=new Map(); //
 
 
 myMap.set(0,"Uno");
+//Adds a new element with a specified key and value to the Map. 
+//If an element with the same key already exists, the element will be updated.
 myMap.set(1,"dos");
 myMap.set(2,"tres");
 myMap.set(3,"Cuatro");

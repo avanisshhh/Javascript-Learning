@@ -9,8 +9,8 @@ const myStates = [
 //myStates.forEach((s) => (console. log(s)))
 //myStates.forEach((s) => console.log(s));
 
-// const names=["Youtube","facebook","instagram","netflix","amazon"];
-// for(const n of names){ console.log(n);}
+//const names=["Youtube","facebook","instagram","netflix","amazon"];
+//for(const n of names){ console.log(n);}
 
 const symbol={
     yt:"youtube",
@@ -19,7 +19,7 @@ const symbol={
     at:"avitherapy"
 }
 // for(const n in symbol){   //in is used for object and of as array
-//     console.log(n); //it will print abbreviation value 
+//     console.log(n); //it will print abbreviation value "yt ig fb at" 
    
 // }
 

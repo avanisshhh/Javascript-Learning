@@ -23,24 +23,25 @@ const myToDo=[
 // console.log(index);
 
 
-const findTodo=function(anymyToDo,title){
-    const index=anymyToDo.findIndex(function(todo,index){
-  return todo.title.toLowerCase()===title.toLowerCase();
-    })
-    //return anymyToDo[index];
-    return index;
-}
-let printMe=findTodo(myToDo,'Go to gym');
-console.log(printMe);
-
-
-// const findTodo=function(myTodo,title){
-//     const titleReturned=myTodo.find(function(todo){
-//         return todo.title.toLowerCase()===title.toLowerCase();
-
+// const findTodo=function(anymyToDo,title){
+//     const index=anymyToDo.findIndex(function(todo,index){
+//   return todo.title.toLowerCase()===title.toLowerCase();
 //     })
-//     return titleReturned;
+//     //return anymyToDo[index];
+//     console.log(index);
+//     return index;
 // }
-
 // let printMe=findTodo(myToDo,'Go to gym');
 // console.log(printMe);
+
+
+const findTodo=function(myTodo,title){
+    const titleReturned=myTodo.find(function(todo){
+        return todo.title.toLowerCase()===title.toLowerCase();
+
+    })
+    return titleReturned;
+}
+
+let printMe=findTodo(myToDo,'Go to gym');
+console.log(printMe,"vvv");

@@ -1,4 +1,4 @@
-const newYear = "1/1/2023";
+const newYear = "1/1/2024";
 console.log("AviCodes");
 
 var daysEl = document.querySelector('.day');

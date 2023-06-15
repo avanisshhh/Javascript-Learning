@@ -49,11 +49,11 @@ body {
 }
 
 #totalBill:focus {
-  outline: 2px solid #4b49f1;
+  outline: 10px solid #d40808;
 }
 
 input [type='range'] {
-  accent-color: #4b49f1;
+  accent-color: #49f19a;
   margin-top: 10px 0px;
 }
 

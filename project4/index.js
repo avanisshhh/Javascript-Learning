@@ -16,6 +16,7 @@ function flip() {
   if (!isFlipped) {
     isFlipped = true;
     firstCard = this; //this will hold the ref of current this is ...basically give div prop
+  console.log(firstCard);
   }
   else {
     secondCard = this;

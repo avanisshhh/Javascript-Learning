@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = [5, 12, 65, 89, 0,100,200];
+        let temp;
+        function customReverse(data,start,end) {
+          console.warn(data)
+          if (start <= end) {
+            temp = data[start];
+            data[start] = data[end];
+            data[end] = temp;
+            customReverse(data, start + 1, end - 1);
+          }
+        }
+  
+        customReverse(data, 0, data.length - 1);
+        //direct rev fn in js
+        //console.log(data.reverse());
+      </script>
+    
+</body>
+</html>

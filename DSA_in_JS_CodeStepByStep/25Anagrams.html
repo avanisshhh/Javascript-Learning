@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram</title>
+</head>
+
+<body>
+    <h1>Anagram is:two strings having same character and length</h1>
+
+    <script>
+        function checkAnagram(str1, str2) {
+            let ObjStr1 = {};
+            //console.log(ObjStr1);
+            if (str1.length !== str2.length) {
+                return false;
+            }
+
+            for (ch of str1) {
+                //console.log(ch);
+                ObjStr1[ch] = (ObjStr1[ch] || 0) + 1
+            }
+            //console.log(ObjStr1);
+            for(ch of str2){
+                console.log(ch);
+                if (!ObjStr1[ch]) {
+                 return false;
+          }
+          ObjStr1[ch]--;
+            }
+            return true;
+
+        }
+
+
+        console.warn(checkAnagram("avaau", "vaaau"));
+
+
+//method 2 for angram
+// function areAnagrams(str1, str2) {
+//   // Remove whitespace and convert to lowercase
+//   const sortedStr1 = str1.replace(/\s/g, '').toLowerCase();
+//   const sortedStr2 = str2.replace(/\s/g, '').toLowerCase();
+
+//   // Check if the sorted strings have the same characters
+//   const sortedArr1 = sortedStr1.split('').sort().join('');
+//   const sortedArr2 = sortedStr2.split('').sort().join('');
+
+//   return sortedArr1 === sortedArr2;
+// }
+
+// // Example usage
+// const string1 = 'listen';
+// const string2 = 'silent';
+
+// console.log(areAnagrams(string1, string2)); 
+    </script>
+
+</body>
+
+</html>

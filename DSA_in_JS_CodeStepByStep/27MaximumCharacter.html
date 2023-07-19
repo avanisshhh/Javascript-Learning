@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maximum Occur character in string</title>
+  </head>
+  <body>
+    <script>
+      let str = "my name isavanish";
+      let strObj = [];
+      let maxKey = "";
+      for (i = 0; i < str.length; i++) {
+        let key = str[i];
+        if (!strObj[key]) {
+          strObj[key] = 0;
+        }
+        strObj[key]++;
+        if (maxKey == "" || strObj[key] > strObj[maxKey]) {
+          maxKey = key;
+        }
+      }
+      console.log(maxKey);
+      console.warn(strObj);
+
+      // Count the occurrences of each character in the string
+      //   for (let char of str) {
+      //     charCount[char] = (charCount[char] || 0) + 1;
+      //     if (charCount[char] > maxCount) {
+      //       maxCount = charCount[char];
+      //       maxChar = char;
+      //     }
+      //   }
+
+      //   return { character: maxChar, occurrence: maxCount };
+      // }
+
+      // // Example usage
+      // const string = 'Hello, World!';
+      // const result = findMaxOccurrence(string);
+      // console.log(`The character '${result.character}' occurs ${result.occurrence} times.`);
+    </script>
+  </body>
+</html>

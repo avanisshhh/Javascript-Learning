@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let money = 100;
+      let totalApple = 0;
+       //fn 1
+      function buyApple(money) {
+        if (money > 0) {
+          console.warn("I have", money, "RS", totalApple);
+          buyMore(money - 5);
+        } else {
+          console.warn("I don't have more money", totalApple);
+        }
+      }
+
+      //fn 2
+      function buyMore(money) {
+        totalApple++;
+        buyApple(money - 5);
+      }
+
+      buyApple(money);
+
+      //interview
+
+         function test(x)
+         {
+          // console.warn(x)
+          if(x>0){
+              test(x-1)
+          }
+         console.warn(x)
+         }
+
+         let data=5;
+         test(data)
+    </script>
+  </body>
+</html>

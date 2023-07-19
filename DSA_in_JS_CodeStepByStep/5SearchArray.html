@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="searchEl" />
+    <button onclick="searchElement()">Search Element</button>
+    <script>
+      let data = [20, 30, 40, 50, 60, 70, 80, 90, 100];
+      document.write(data);
+      function searchElement() {
+        let inputValue = document.getElementById("searchEl").value;
+        item = parseInt(inputValue);
+        let index = undefined;
+        for (let i = 0; i < data.length; i++) {
+          if (item == data[i]) {
+            index = i;
+            break;
+          }
+        }
+        console.warn(
+          `The element ${item} is at ${index} of the postion of array`
+        );
+        console.log("search value is at index", data.indexOf(item));
+      }
+    </script>
+  </body>
+</html>

@@ -47,6 +47,34 @@
           lead.next = nextNode;
           console.log(lead);
         }
+        insertNode(index, val) {
+          let counter = 1;
+          let currentNode = this.head;
+          while (counter < index) {
+            counter++;
+            currentNode = currentNode.next;
+          }
+          let nextNode = currentNode.next;
+          currentNode.next = {
+            value: val,
+            next: nextNode,
+          };
+        }
+
+        searchNode(data) {
+          let result = undefined;
+          let lead = this.head;
+          let loop = true;
+          while (loop) {
+            lead = lead.next;
+            loop = !!lead; //check for undefined & convert value to boolean
+
+            if (loop && lead.value === data) {
+              loop = false;
+              result = lead;
+            }
+          }
+        }
       }
 
       let list = new List(10);
@@ -54,10 +82,12 @@
       list.add(20);
       list.add(40);
       list.add(50);
+      list.insertNode(2, 4000);
 
       list.traversing();
-      list.deleteNode(2);
-      //console.log(list);
+      // list.deleteNode(2);
+      console.log(list);
+      list.searchNode(4000);
     </script>
   </body>
 </html>

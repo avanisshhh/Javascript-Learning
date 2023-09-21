@@ -19,8 +19,8 @@ var users = ["Ted", "Tim", "Ton", "Sam", "Sor", "Sod"];
 //console.log(users.slice(2)); //from element 2 left will remove and print nxt remaining ele [ 'Ton', 'Sam', 'Sor', 'Sod' ]
 
 
-//users.splice(1,3,"Hi"); // here 1 is starting and 3 is count here that will remove 3 element from
+users.splice(1,3,"Hi"); // here 1 is starting and 3 is count here that will remove 3 element from
                           //respectice index
-users.splice(1,3,"Hi","Vii") //[ 'Ted', 'Hi', 'Vii', 'Sor', 'Sod' ]
+//users.splice(1,3,"Hi","Vii") //[ 'Ted', 'Hi', 'Vii', 'Sor', 'Sod' ]
 console.log(users);
 

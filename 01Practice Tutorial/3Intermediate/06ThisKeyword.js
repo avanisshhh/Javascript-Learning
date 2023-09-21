@@ -1,12 +1,12 @@
 //this keyword
 
-console.log(this); //empty scope in node engine
+console.log(this,"l3"); //empty scope in node engine
 
 var game="basketball";
 
 function myName(){
     var name="Avanish";
-    console.log(this);
+    console.log(this,"l9");
 
 }
 myName();

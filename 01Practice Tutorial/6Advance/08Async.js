@@ -5,7 +5,7 @@ const One=()=>{
 }
 const Dos=()=>{
    
-    setTimeout(()=>console.log("wooooooo"),5000); //async cl
+    setTimeout(()=>console.log("wooooooo"),0); //async cl
     console.log("I m Two");
 }
 const Tres=()=>{

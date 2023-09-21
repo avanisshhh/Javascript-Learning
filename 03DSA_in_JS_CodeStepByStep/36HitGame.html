@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hit Mosquito Game</title>
+    <style>
+      .playground {
+        position: relative;
+        background-color: green;
+        height: 550px;
+        width: 550px;
+        float: left;
+        padding: 10px;
+      }
+      .mosquito {
+        position: relative;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mosquito Game</h1>
+    <div class="playground">
+      <img
+        src="https://freepngimg.com/thumb/bug/51470-5-mosquito-free-photo-png.png"
+        class="mosquito"
+        onclick="hitMosquito()"
+        id="mosquito"
+      />
+    </div>
+    <div class="controls">
+        <h2 id="gameStatus"></h2>
+      <h3>
+        <span>Total</span>
+        <span id="totalHits"></span>
+      </h3>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+        let hitCount = 0;
+        let isGameStarted=false;
+      function startGame() {
+        document.getElementById("gameStatus").innerHTML="Game Started"
+        isGameStarted=true;
+        hitCount=0;
+        let time = setInterval(() => {
+          let i = Math.floor(Math.random() * 500) + 1;
+          let j = Math.floor(Math.random() * 500) + 1;
+          mosquito.style.left = i + "px";
+          mosquito.style.top = j + "px";
+        }, 2000);
+        setTimeout(() => {
+          clearTimeout(time);
+          isGameStarted=false
+          document.getElementById("gameStatus").innerHTML="Game Over"
+
+        }, 10000);
+      }
+      function hitMosquito() {
+        if(isGameStarted){
+            hitCount++;
+        document.getElementById("totalHits").innerHTML = hitCount;
+     
+        }
+        }
+    </script>
+  </body>
+</html>

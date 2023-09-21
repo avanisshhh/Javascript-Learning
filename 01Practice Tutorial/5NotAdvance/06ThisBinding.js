@@ -26,7 +26,7 @@ const dj={
                //this is pointing towards current avanish object i.e we are using bind 
 
 
-   var djInfo=  avanish.getInfo.bind(dj) //bind give u arefernce back and u hv to called that method
+   var djInfo=  avanish.getInfo.bind(dj) //bind give u a refernce back and u hv to called that method
    djInfo();         //method call
 
    var djInfo1=  avanish.getInfo.call(dj)

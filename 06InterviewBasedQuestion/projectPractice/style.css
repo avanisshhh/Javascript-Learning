@@ -1,0 +1,46 @@
+.red {
+    background-color: red
+}
+
+.pink {
+    background-color: pink
+}
+
+.voilet {
+    background-color: violet;
+}
+
+.orange {
+    background-color: orange
+}
+
+.cyan {
+    background-color: cyan
+}
+
+div.color {
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid blue;
+
+
+}
+
+.bbb {
+    padding-left: 250px
+}
+.center{
+    /* //background-color: red; */
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: inline-block;
+    position: center;
+}
+.ast{
+    padding-left: 80vh;
+}
